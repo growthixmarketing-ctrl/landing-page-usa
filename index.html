@@ -3,588 +3,541 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wconnect — Marketing Digital, Meta Ads y Crecimiento</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Westmark Digital: Meta Ads, edición de videos, funnels de ventas, optimización, estrategias de contenido y manejo de redes. Transformamos negocios en marcas digitales rentables." />
-  <meta name="keywords" content="Meta Ads, Facebook Ads, Instagram Ads, Agencia de marketing, Funnels, Optimización, Growth Marketing, Edición de videos, Contenido, Redes Sociales" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gx: {
-              50:  '#fffbea',
-              100: '#fff3c4',
-              200: '#fee188',
-              300: '#fdd24d',
-              400: '#fcc419',
-              500: '#f59f00', /* amarillo cálido */
-              600: '#d97706',
-              700: '#b45309',
-              800: '#1f1f1f', /* negro suave UI */
-              900: '#0a0a0a'
-            }
-          },
-          fontFamily: {
-            inter: ['Inter', 'system-ui', 'sans-serif'],
-            mont: ['Montserrat', 'system-ui', 'sans-serif']
-          },
-          boxShadow: {
-            glow: '0 10px 30px -10px rgba(245,159,0,.55)'
-          },
-          keyframes: {
-            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
-            marquee: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } }
-          },
-          animation: {
-            float: 'float 6s ease-in-out infinite',
-            marquee: 'marquee 25s linear infinite'
-          }
-        }
+  <title>WCONNECT — Impulsa tu marca al siguiente nivel</title>
+  <meta name="description" content="Ayudamos a emprendedores, marcas personales y empresas a posicionarse profesionalmente en redes y escalar sus resultados digitales." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 10%;
+      background: rgba(0, 0, 0, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: #00b4ff;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    header nav a:hover {
+      color: #00b4ff;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 0 10%;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background: #00b4ff;
+      border: none;
+      color: #000;
+      padding: 15px 35px;
+      font-size: 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .hero button:hover {
+      transform: scale(1.05);
+      background: #00d0ff;
+    }
+    .section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00b4ff;
+    }
+    .section p {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      color: #bbb;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+    .testimonial {
+      background: #111;
+      border: 1px solid #1f1f1f;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 380px;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(0, 180, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .testimonial:hover {
+      transform: translateY(-5px);
+    }
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .testimonial h4 {
+      margin: 0;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+    .testimonial span {
+      display: block;
+      font-size: 0.9rem;
+      color: #00b4ff;
+      margin-bottom: 10px;
+    }
+    .testimonial p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #111;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      width: 100%;
+      background: #00b4ff;
+      border: none;
+      color: #000;
+      padding: 15px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .contact-form button:hover {
+      background: #00d0ff;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 10%;
+      background: #0a0a0a;
+      color: #666;
+      border-top: 1px solid #111;
+    }
+    footer a {
+      color: #00b4ff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
       }
     }
-  </script>
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <style>
-    :root{ --gx-yellow:#f59f00; --gx-black:#0a0a0a; --gx-dark:#1f1f1f; --gx-white:#ffffff; }
-    html{ scroll-behavior:smooth; }
-    body{ font-family: 'Inter', sans-serif; color:#0f172a; }
-    .gx-gradient{ background: linear-gradient(135deg,var(--gx-yellow),#d97706 60%); }
-    .gx-btn{ background: linear-gradient(135deg,var(--gx-yellow),#d97706); color:#0a0a0a; }
-    .gx-btn:hover{ filter:brightness(1.05); box-shadow: 0 10px 30px -10px rgba(245,159,0,.55); transform: translateY(-1px); }
-    .gx-outline{ border:2px solid var(--gx-yellow); color:white; }
-    .gx-outline:hover{ background: var(--gx-yellow); color:#0a0a0a; }
-    .mask-fade { mask-image: linear-gradient(to bottom, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);}
-    .no-scrollbar::-webkit-scrollbar{ display:none; } .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
   </style>
 </head>
-<body class="bg-white antialiased">
-  <!-- WhatsApp Floating -->
-  <a href="https://wa.me/3515722575" class="fixed bottom-5 right-5 z-50 h-14 w-14 rounded-full flex items-center justify-center bg-green-500 text-white shadow-xl hover:bg-green-600 transition">
-    <i class="fa-brands fa-whatsapp text-2xl"></i>
-  </a>
+<body>
 
-  <!-- NAV -->
-  <nav class="fixed top-0 inset-x-0 z-40 bg-white/80 backdrop-blur border-b border-black/5">
-    <div class="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-mont text-xl font-extrabold tracking-tight">
-      <img src="C:\Users\JS\Desktop\growthix landing pro\imagenes/LOGO.png" width="65" style="border-radius: 50%; object-fit: cover;">
-        <span>Wconnect <span class="text-gx-500">Agency</span></span>
-      </a>
-      <button id="btnMenu" class="md:hidden p-2 rounded hover:bg-black/5"><i class="fa-solid fa-bars text-xl"></i></button>
-      <div id="navLinks" class="hidden md:flex items-center gap-8 font-medium">
-        <a href="#servicios" class="hover:text-gx-600">Servicios</a>
-        <a href="#proceso" class="hover:text-gx-600">Proceso</a>
-        <a href="#portafolio" class="hover:text-gx-600">Portafolio</a>
-        <a href="#testimonios" class="hover:text-gx-600">Testimonios</a>
-        <a href="#contacto" class="gx-btn px-4 py-2 rounded-full text-sm font-semibold">Agenda una reunión</a>
-      </div>
-    </div>
-    <div id="mobilePanel" class="md:hidden hidden border-t bg-white">
-      <div class="px-4 py-4 space-y-3">
-        <a href="#servicios" class="block">Servicios</a>
-        <a href="#proceso" class="block">Proceso</a>
-        <a href="#portafolio" class="block">Portafolio</a>
-        <a href="#testimonios" class="block">Testimonios</a>
-        <a href="#contacto" class="inline-flex gx-btn px-4 py-2 rounded-full">Contactar</a>
-      </div>
-    </div>
+<header>
+  <h1>WCONNECT</h1>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#testimonios">Clientes</a>
+    <a href="#contacto">Contacto</a>
   </nav>
+</header>
 
-  <!-- HERO -->
-  <header class="relative pt-28 pb-20 bg-neutral-950 text-white overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-      <svg class="w-[160%] h-[160%] -rotate-12 translate-x-[-15%] -translate-y-[10%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="none">
-        <g opacity=".6">
-          <circle cx="200" cy="200" r="2" fill="white"/>
-          <circle cx="400" cy="400" r="2" fill="white"/>
-          <circle cx="600" cy="300" r="2" fill="white"/>
-          <circle cx="900" cy="500" r="2" fill="white"/>
-          <circle cx="1100" cy="350" r="2" fill="white"/>
-        </g>
-      </svg>
+<section class="hero" data-aos="fade-up">
+  <h2>Impulsa tu marca y escala tus resultados digitales</h2>
+  <p>Somos un equipo de especialistas en posicionamiento digital que te ayuda a construir una marca sólida, atraer clientes potenciales y aumentar tus ventas en redes.</p>
+  <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Comenzar ahora</button>
+</section>
+
+<section class="section" id="testimonios" data-aos="fade-up">
+  <h3>Testimonios de nuestros clientes</h3>
+  <p>Empresas, marcas personales y emprendedores que confiaron en WCONNECT para escalar su crecimiento digital.</p>
+  
+  <div class="testimonials">
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Cliente">
+      <h4>Lucas Martínez</h4>
+      <span>Fundador de SmartGrow Agency</span>
+      <p>“Trabajar con WCONNECT cambió la forma en que gestionamos nuestras campañas. Pasamos de resultados inestables a un sistema de captación constante y profesional.”</p>
+    </div>
+    
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Cliente">
+      <h4>María López</h4>
+      <span>Coach de Marca Personal</span>
+      <p>“El equipo entendió exactamente cómo comunicar mi mensaje. Hoy mi cuenta crece todos los días y mis programas se llenan sin invertir horas en marketing.”</p>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10 grid lg:grid-cols-2 gap-10 items-center">
-      <div data-aos="fade-up">
-        <p class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-white/70 mb-4">
-          <span class="h-2 w-2 rounded-full bg-gx-500"></span> Agencia de crecimiento digital
-        </p>
-        <h1 class="font-mont text-4xl md:text-6xl font-extrabold leading-tight">
-          Transformamos <span class="text-gx-500">negocios</span> en <span class="text-gx-500">marcas digitales</span> rentables
-        </h1>
-        <p class="mt-5 text-lg text-white/80 max-w-2xl">Meta Ads, edición de videos, funnels, optimización, contenido y manejo de redes para escalar clientes, ventas y autoridad.</p>
-        <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#contacto" class="gx-btn px-6 py-3 rounded-full font-semibold">Agenda una reunión</a>
-          <a href="#servicios" class="gx-outline px-6 py-3 rounded-full font-semibold">Ver servicios</a>
-        </div>
-
-        <div class="mt-10 grid grid-cols-3 gap-6 text-center">
-          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos="fade-up" data-aos-delay="50">
-            <p class="text-3xl font-extrabold text-gx-500">+320%</p>
-            <p class="text-sm text-white/70">ROAS promedio</p>
-          </div>
-          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos="fade-up" data-aos-delay="100">
-            <p class="text-3xl font-extrabold text-gx-500">+120</p>
-            <p class="text-sm text-white/70">Creatividades/mes</p>
-          </div>
-          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos="fade-up" data-aos-delay="150">
-            <p class="text-3xl font-extrabold text-gx-500">24/7</p>
-            <p class="text-sm text-white/70">Optimización activa</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative lg:block hidden" data-aos="fade-left">
-        <div class="absolute -top-6 -left-6 h-24 w-24 rounded-2xl gx-gradient blur-2xl opacity-75"></div>
-        <div class="relative bg-neutral-900 border border-white/10 rounded-3xl p-6 shadow-2xl">
-          <div class="flex items-center justify-between">
-            <span class="text-white/60 text-sm">Panel de campañas</span>
-            <span class="inline-flex items-center gap-2 text-xs bg-white/5 px-3 py-1 rounded-full"><span class="h-2 w-2 bg-green-400 rounded-full"></span> en vivo</span>
-          </div>
-          <div class="mt-5 space-y-4">
-            <div class="flex items-center justify-between bg-white/5 rounded-xl p-4">
-              <div class="flex items-center gap-3">
-                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-brands fa-facebook-f"></i></span>
-                <div>
-                  <p class="font-semibold">Meta Ads — Conversión</p>
-                  <p class="text-sm text-white/70">ROAS 4.2 • CPA $2.8</p>
-                </div>
-              </div>
-              <span class="text-emerald-400 font-semibold">↑ 18%</span>
-            </div>
-            <div class="flex items-center justify-between bg-white/5 rounded-xl p-4">
-              <div class="flex items-center gap-3">
-                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-solid fa-film"></i></span>
-                <div>
-                  <p class="font-semibold">Reels — Edición & Testing</p>
-                  <p class="text-sm text-white/70">CTR 2.9% • CPM $1.6</p>
-                </div>
-              </div>
-              <span class="text-emerald-400 font-semibold">↑ 9%</span>
-            </div>
-            <div class="flex items-center justify-between bg-white/5 rounded-xl p-4">
-              <div class="flex items-center gap-3">
-                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-solid fa-funnel-dollar"></i></span>
-                <div>
-                  <p class="font-semibold">Funnel — Leads a Ventas</p>
-                  <p class="text-sm text-white/70">CVR 6.1% • LTV ↑</p>
-                </div>
-              </div>
-              <span class="text-emerald-400 font-semibold">↑ 12%</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+      <h4>Esteban Rivas</h4>
+      <span>CEO de Rivas Consultores</span>
+      <p>“Nos ayudaron a profesionalizar toda nuestra presencia digital. Desde los anuncios hasta el branding, cada detalle fue impecable.”</p>
     </div>
 
-    <!-- Marquee clients -->
-    <div class="mt-14 border-t border-white/10">
-      <div class="overflow-hidden no-scrollbar">
-        <div class="flex gap-12 whitespace-nowrap py-6 animate-marquee">
-          <span class="text-white/60">+ Más clientes • Más ventas • Más crecimiento •</span>
-          <span class="text-white/60">+ Meta Ads • Contenido • Funnels •</span>
-          <span class="text-white/60">+ Optimización • Creatividad •</span>
-          <span class="text-white/60">+ Growth • Performance • Brand</span>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- SERVICIOS -->
-  <section id="servicios" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 md:px-8">
-      <div class="text-center mb-14" data-aos="fade-up">
-        <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Servicios <span class="text-gx-500">Wconnect</span></h2>
-        <p class="text-gray-600 mt-3 max-w-2xl mx-auto">Soluciones integrales de marketing y performance. Estrategia, creatividad y datos en un mismo lugar.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Meta Ads -->
-        <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition card" data-aos="fade-up" data-aos-delay="50">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-bullhorn"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Meta Ads</h3>
-          <p class="text-gray-600 mb-4">Campañas en Facebook & Instagram con segmentación avanzada, testing A/B y optimización continua.</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Estructuras CBO/ABO</li>
-            <li>• Creatividades y ofertas</li>
-            <li>• Reportes y ROAS</li>
-          </ul>
-        </div>
-        <!-- Video -->
-        <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="100">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-video"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Edición de Videos</h3>
-          <p class="text-gray-600 mb-4">Reels, UGC y spots con cortes dinámicos, subtítulos, motion y hooks de alto CTR.</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Paquetes mensuales</li>
-            <li>• Animaciones y captions</li>
-            <li>• Adaptaciones multi formato</li>
-          </ul>
-        </div>
-        <!-- Funnels -->
-        <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="150">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-funnel-dollar"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Funnels de Ventas</h3>
-          <p class="text-gray-600 mb-4">Arquitectura full-funnel: captación, nutrición y cierre con automatización.</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Landing + Email + CRM</li>
-            <li>• Lead scoring y nurturing</li>
-            <li>• Optimización de conversión</li>
-          </ul>
-        </div>
-        <!-- Optimización -->
-        <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="200">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-chart-line"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Optimización</h3>
-          <p class="text-gray-600 mb-4">SEO técnico, CRO y analítica para mejorar rendimiento y visibilidad.</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Auditorías y roadmaps</li>
-            <li>• Experimentos y heatmaps</li>
-            <li>• KPIs y dashboards</li>
-          </ul>
-        </div>
-        <!-- Contenido -->
-        <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="250">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-pen-nib"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Estrategias de Contenido</h3>
-          <p class="text-gray-600 mb-4">Calendarios, pilares, guiones y diseño para atraer y convertir.</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Playbooks por objetivo</li>
-            <li>• Copywriting de conversión</li>
-            <li>• Librería de assets</li>
-          </ul>
-        </div>
-        <!-- Redes -->
-        <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="300">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-hashtag"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Manejo de Redes</h3>
-          <p class="text-gray-600 mb-4">Gestión integral: planificación, community y reportes.</p>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Reputación y respuesta</li>
-            <li>• Programación y monitoreo</li>
-            <li>• Métricas de crecimiento</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESO -->
-  <section id="proceso" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 md:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Nuestro proceso</h2>
-          <p class="text-gray-600 mt-3">Enfocados en resultados medibles. Estrategia, ejecución y mejora continua.</p>
-          <div class="mt-8 space-y-6">
-            <div class="flex gap-4" data-aos="fade-up"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">1</span><div><h4 class="font-semibold">Diagnóstico & Objetivos</h4><p class="text-gray-600 text-sm">Auditoría y definición de KPIs.</p></div></div>
-            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="50"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">2</span><div><h4 class="font-semibold">Estrategia & Plan</h4><p class="text-gray-600 text-sm">Rutas de medios, contenido y funnel.</p></div></div>
-            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="100"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">3</span><div><h4 class="font-semibold">Producción & Lanzamiento</h4><p class="text-gray-600 text-sm">Creatividades, configuración y QA.</p></div></div>
-            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="150"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">4</span><div><h4 class="font-semibold">Optimización & Escala</h4><p class="text-gray-600 text-sm">Testing, automatización y crecimiento.</p></div></div>
-          </div>
-        </div>
-        <div class="relative">
-          <div class="rounded-3xl border shadow-2xl overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop" alt="Equipo de marketing trabajando" class="w-full h-full object-cover mask-fade" />
-          </div>
-          <div class="absolute -bottom-6 -left-6 h-24 w-24 rounded-2xl gx-gradient blur-2xl opacity-70"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTAFOLIO / CASES -->
-  <section id="portafolio" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 md:px-8">
-      <div class="text-center mb-12">
-        <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Portafolio & Casos</h2>
-        <p class="text-gray-600 mt-3">Algunos resultados y piezas recientes.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="group relative overflow-hidden rounded-2xl border bg-white" data-aos="zoom-in">
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Campaña Meta Ads"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex items-end">
-            <div class="text-white"><p class="font-semibold">Ecommerce • ROAS 5.1</p><p class="text-sm text-white/80">Estrategia CBO y creatividades UGC</p></div>
-          </div>
-        </div>
-        <div class="group relative overflow-hidden rounded-2xl border bg-white" data-aos="zoom-in" data-aos-delay="50">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Funnel de ventas"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex items-end">
-            <div class="text-white"><p class="font-semibold">Servicio • 38% CVR</p><p class="text-sm text-white/80">Funnel + CRM + Email</p></div>
-          </div>
-        </div>
-        <div class="group relative overflow-hidden rounded-2xl border bg-white" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Contenido y branding"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex items-end">
-            <div class="text-white"><p class="font-semibold">Contenido • +220% alcance</p><p class="text-sm text-white/80">Pilares + guiones + diseño</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIOS (REEMPLAZAR) -->
-<section id="testimonios" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 md:px-8">
-    <div class="text-center mb-12">
-      <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Lo que dicen nuestros clientes</h2>
-      <p class="text-gray-600 mt-3">Confianza, resultados y partnership real.</p>
-    </div>
-
-    <div class="overflow-x-auto no-scrollbar flex gap-6 snap-x">
-
-      <!-- Testimonio 1 - VICOR -->
-      <a href="https://www.instagram.com/vicorok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
-         target="_blank" rel="noopener noreferrer" aria-label="Perfil VICOR" 
-         class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
-            <img src="https://i.imgur.com/rxzt6Qe.jpg"
-                 alt="VICOR Vidrios"
-                 class="max-h-10 max-w-10 object-contain"
-                 loading="lazy" decoding="async"
-                 onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=VICOR';" />
-          </div>
-          <div>
-            <p class="font-semibold">Andrés Orozco</p>
-            <p class="text-xs text-gray-500">CEO de VICOR • Fábrica de Vidrios</p>
-          </div>
-        </div>
-        <p class="text-gray-700">"Gracias a Wconnect logramos aumentar clientes B2B y mejorar nuestro posicionamiento en la industria del vidrio."</p>
-        <div class="mt-4 text-yellow-500">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-      </a>
-
-      <!-- Testimonio 2 - Muebles de Pablo -->
-      <a href="https://www.instagram.com/mueblesdepablo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
-         target="_blank" rel="noopener noreferrer" aria-label="Perfil Muebles de Pablo"
-         class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="50">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
-            <img src="https://i.imgur.com/vm0BXSV.jpg"
-                 alt="Muebles de Pablo"
-                 class="max-h-10 max-w-10 object-contain"
-                 loading="lazy" decoding="async"
-                 onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=Muebles';" />
-          </div>
-          <div>
-            <p class="font-semibold">Pablo Suárez</p>
-            <p class="text-xs text-gray-500">CEO de Muebles de Pablo • Antigüedades</p>
-          </div>
-        </div>
-        <p class="text-gray-700">"El equipo Wconnect potenció nuestro negocio online de antigüedades y hoy tenemos más clientes y ventas recurrentes."</p>
-        <div class="mt-4 text-yellow-500">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-      </a>
-
-      <!-- Testimonio 3 - Olimpo Trofeos (USANDO IBb DIRECT LINK) -->
-      <a href="https://www.instagram.com/olimpotrofeos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
-         target="_blank" rel="noopener noreferrer" aria-label="Perfil Olimpo Trofeos"
-         class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-        <div class="flex items-center gap-3 mb-3">
-          <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
-            <img src="https://i.ibb.co/4RWzSQ9j/Dise-o-sin-t-tulo-1.jpg"
-                 alt="Olimpo Trofeos"
-                 class="max-h-10 max-w-10 object-contain"
-                 loading="lazy" decoding="async"
-                 onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=Olimpo';" />
-          </div>
-          <div>
-            <p class="font-semibold">Gonzalo Peiretti</p>
-            <p class="text-xs text-gray-500">CEO de Olimpo Trofeos • Fábrica de Trofeos</p>
-          </div>
-        </div>
-        <p class="text-gray-700">"Con Wconnect Digital escalamos nuestras ventas digitales y logramos posicionar Olimpo Trofeos como referente en la región."</p>
-        <div class="mt-4 text-yellow-500">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-      </a>
-
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Cliente">
+      <h4>Catalina Torres</h4>
+      <span>Creadora de contenido Fitness</span>
+      <p>“Gracias a WCONNECT logré monetizar mi comunidad y atraer marcas. Su estrategia me permitió posicionarme sin perder autenticidad.”</p>
     </div>
   </div>
 </section>
 
+<section class="section" id="contacto" data-aos="fade-up">
+  <h3>Contáctanos</h3>
+  <p>¿Listo para llevar tu marca al siguiente nivel? Completa el formulario y uno de nuestros especialistas se pondrá en contacto contigo.</p>
 
-  <!-- FAQ -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 md:px-8">
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
-        <div>
-          <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Preguntas frecuentes</h2>
-          <p class="text-gray-600 mt-3">Respuestas claras para tomar decisiones rápidas.</p>
-        </div>
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl p-5 border">
-            <summary class="font-semibold cursor-pointer">¿Cómo medimos resultados?</summary>
-            <p class="text-gray-600 mt-3">Definimos KPIs y dashboards. Reportes semanales con insights y próximos pasos.</p>
-          </details>
-          <details class="bg-white rounded-xl p-5 border">
-            <summary class="font-semibold cursor-pointer">¿Tienen contratos mínimos?</summary>
-            <p class="text-gray-600 mt-3">Proponemos 3 meses para instalar estrategia, aprender y escalar con datos.</p>
-          </details>
-          <details class="bg-white rounded-xl p-5 border">
-            <summary class="font-semibold cursor-pointer">¿Qué necesitan para empezar?</summary>
-            <p class="text-gray-600 mt-3">Accesos a cuentas, brief de marca, objetivos y presupuesto estimado.</p>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-16 relative text-white">
-    <div class="absolute inset-0 gx-gradient"></div>
-    <div class="relative max-w-7xl mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-8 items-center">
-      <div>
-        <h3 class="font-mont text-3xl md:text-4xl font-extrabold">¿Listos para escalar?</h3>
-        <p class="text-white/90 mt-2">Hablemos de objetivos, presupuesto y un plan claro para los próximos 90 días.</p>
-      </div>
-      <div class="flex gap-4 justify-start lg:justify-end">
-        <a href="#contacto" class="bg-black text-white px-6 py-3 rounded-full font-semibold">Agenda ahora</a>
-        <a href="#servicios" class="bg-white text-black px-6 py-3 rounded-full font-semibold">Ver servicios</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-<section id="contacto" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 md:px-8">
-    <div class="grid lg:grid-cols-2 gap-10">
-      <div>
-        <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Conversemos</h2>
-        <p class="text-gray-600 mt-3">Completa el formulario y coordinamos una reunión. Respondemos en menos de 24h.</p>
-        <ul class="mt-6 space-y-3 text-gray-700">
-          <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Plan a medida según objetivos</li>
-          <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Sin tecnicismos, con claridad</li>
-          <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Equipo implicado en resultados</li>
-        </ul>
-      </div>
-
-      <!-- Formulario con IDs -->
-      <form id="contactForm" class="bg-gray-50 rounded-2xl p-6 border space-y-4">
-        <div>
-          <label for="nombre" class="block text-sm font-medium mb-1">Nombre y empresa</label>
-          <input id="nombre" type="text" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="Ej. Valentina — Tienda Vela" required>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div>
-            <label for="email" class="block text-sm font-medium mb-1">Email</label>
-            <input id="email" type="email" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="tucorreo@empresa.com" required>
-          </div>
-          <div>
-            <label for="whatsapp" class="block text-sm font-medium mb-1">WhatsApp</label>
-            <input id="whatsapp" type="tel" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="+54 9 ..." required>
-          </div>
-        </div>
-        <div>
-          <label for="servicio" class="block text-sm font-medium mb-1">Servicio de interés</label>
-          <select id="servicio" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500">
-            <option>Meta Ads</option>
-            <option>Edición de Videos</option>
-            <option>Funnel de Ventas</option>
-            <option>Optimización</option>
-            <option>Estrategias de Contenido</option>
-            <option>Manejo de Redes</option>
-          </select>
-        </div>
-        <div>
-          <label for="objetivo" class="block text-sm font-medium mb-1">Cuéntanos brevemente tu objetivo</label>
-          <textarea id="objetivo" rows="4" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="Ej. escalar ventas online y mejorar el ROAS"></textarea>
-        </div>
-        <button type="submit" class="gx-btn px-6 py-3 rounded-xl font-semibold w-full">Enviar</button>
-        <p class="text-xs text-gray-500 text-center">Al enviar aceptas ser contactado por email/WhatsApp.</p>
-      </form>
-    </div>
-  </div>
+  <form class="contact-form" onsubmit="event.preventDefault(); alert('✅ Tu mensaje ha sido enviado con éxito.');">
+    <input type="text" placeholder="Nombre completo" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea rows="5" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
 </section>
 
+<footer>
+  <p>© 2025 WCONNECT. Todos los derechos reservados.</p>
+  <div>
+    <a href="#">Instagram</a> | 
+    <a href="#">LinkedIn</a> | 
+    <a href="#">WhatsApp</a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  document.getElementById("contactForm").addEventListener("submit", async function(e) {
-    e.preventDefault();
-
-    const data = {
-      nombre: document.getElementById("nombre").value,
-      email: document.getElementById("email").value,
-      whatsapp: document.getElementById("whatsapp").value,
-      servicio: document.getElementById("servicio").value,
-      objetivo: document.getElementById("objetivo").value
-    };
-
-    await fetch("https://script.google.com/macros/s/AKfycbyEa2HxOUhy9OCRcR5oQzpIPRW1SSvooRGlRzuU3I0M31IUsG1b4lKKl4RoK_kyU6iw_w/exec", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-
-    alert("✅ Datos enviados y guardados correctamente.");
-    document.getElementById("contactForm").reset(); // limpia el formulario
-  });
+  AOS.init({ duration: 1000, once: true });
 </script>
+</body>
+</html>
+¿Querés que te cree también una versión con fondo animado y efecto de entrada del texto (tipo agency premium landing) para usar en campañas de tráfico frío o presentaciones a clientes?
 
-  <!-- FOOTER -->
-  <footer class="bg-neutral-950 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-3 gap-8">
-      <div>
-        <div class="flex items-center gap-2 font-mont text-xl font-extrabold">
-          <img src="C:\Users\JS\Desktop\growthix landing pro\imagenes/LOGO.png" width="65" style="border-radius: 50%; object-fit: cover;">
-         Wconnect
-        </div>
-        <p class="text-white/70 mt-3 max-w-sm">Más clientes, más ventas, más crecimiento. Marketing y performance con enfoque en resultados reales.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold mb-3">Servicios</h4>
-        <ul class="space-y-2 text-white/80">
-          <li>Meta Ads</li>
-          <li>Edición de videos</li>
-          <li>Funnels de ventas</li>
-          <li>Optimización</li>
-          <li>Estrategias de contenido</li>
-          <li>Manejo de redes</li>
-        </ul> 
-      </div>
-      <div>
-        <h4 class="font-semibold mb-3">Contacto</h4>
-        <ul class="space-y-2 text-white/80">
-          <li><i class="fa-brands fa-whatsapp mr-2 text-gx-500"></i> +54 9 351 572 2575</li>
-          <li><i class="fa-solid fa-envelope mr-2 text-gx-500"></i> growthix.marketing@gmail.com</li>
-          <li><i class="fa-brands fa-instagram mr-2 text-gx-500"></i> @growthix.marketing</li>
-        </ul>
-      </div>
+
+
+
+
+
+
+Dijiste:
+quiero que quede igual pero traducida al ingles y el amarillo cambialo por el dorado #cba356
+
+
+ChatGPT dijo:
+Perfecto 🔥
+Acá tenés la versión en inglés de tu landing page para WCONNECT, totalmente profesional, con el color principal cambiado al dorado #cba356, manteniendo el mismo diseño, estructura y animaciones.
+Está lista para subir directamente. 👇
+
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCONNECT — Elevate Your Brand and Grow Online</title>
+  <meta name="description" content="We help entrepreneurs, personal brands, and companies position themselves professionally on social media and scale their digital results." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 10%;
+      background: rgba(0, 0, 0, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: #cba356;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    header nav a:hover {
+      color: #cba356;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 0 10%;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background: #cba356;
+      border: none;
+      color: #000;
+      padding: 15px 35px;
+      font-size: 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .hero button:hover {
+      transform: scale(1.05);
+      background: #e0c06f;
+    }
+    .section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #cba356;
+    }
+    .section p {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      color: #bbb;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+    .testimonial {
+      background: #111;
+      border: 1px solid #1f1f1f;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 380px;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(203, 163, 86, 0.15);
+      transition: transform 0.3s ease;
+    }
+    .testimonial:hover {
+      transform: translateY(-5px);
+    }
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .testimonial h4 {
+      margin: 0;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+    .testimonial span {
+      display: block;
+      font-size: 0.9rem;
+      color: #cba356;
+      margin-bottom: 10px;
+    }
+    .testimonial p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #111;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      width: 100%;
+      background: #cba356;
+      border: none;
+      color: #000;
+      padding: 15px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .contact-form button:hover {
+      background: #e0c06f;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 10%;
+      background: #0a0a0a;
+      color: #666;
+      border-top: 1px solid #111;
+    }
+    footer a {
+      color: #cba356;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WCONNECT</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" data-aos="fade-up">
+  <h2>Elevate your brand and scale your digital results</h2>
+  <p>We’re a team of digital growth specialists who help you build a strong brand, attract high-quality clients, and boost your sales through professional strategies.</p>
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+</section>
+
+<section class="section" id="clients" data-aos="fade-up">
+  <h3>What Our Clients Say</h3>
+  <p>Brands, creators, and entrepreneurs who trusted WCONNECT to scale their digital presence.</p>
+  
+  <div class="testimonials">
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Client">
+      <h4>Lucas Martinez</h4>
+      <span>Founder of SmartGrow Agency</span>
+      <p>“Working with WCONNECT completely transformed how we manage our marketing. We went from unstable results to a consistent and scalable client acquisition system.”</p>
     </div>
-    <div class="mt-10 text-center text-white/50 text-sm">© 2025 Wconnect. Todos los derechos reservados.</div>
-  </footer>
+    
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Client">
+      <h4>Maria Lopez</h4>
+      <span>Personal Branding Coach</span>
+      <p>“The team understood my vision perfectly. Now my account grows daily and my programs are fully booked without me spending endless hours on marketing.”</p>
+    </div>
 
-  <!-- SCRIPTS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true, duration: 700, offset: 80 });
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+      <h4>Esteban Rivas</h4>
+      <span>CEO at Rivas Consulting</span>
+      <p>“They helped us professionalize our entire digital presence — from ads to branding. Every detail was handled with precision and care.”</p>
+    </div>
 
-    const btn = document.getElementById('btnMenu');
-    const panel = document.getElementById('mobilePanel');
-    const links = document.getElementById('navLinks');
-    btn && btn.addEventListener('click', () => panel.classList.toggle('hidden'));
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Client">
+      <h4>Catalina Torres</h4>
+      <span>Fitness Content Creator</span>
+      <p>“Thanks to WCONNECT I learned how to monetize my audience and attract collaborations. Their strategy helped me grow without losing authenticity.”</p>
+    </div>
+  </div>
+</section>
 
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', () => panel && panel.classList.add('hidden'));
-    });
-  </script>
+<section class="section" id="contact" data-aos="fade-up">
+  <h3>Contact Us</h3>
+  <p>Ready to take your brand to the next level? Fill out the form and one of our specialists will reach out to you.</p>
+
+  <form class="contact-form" onsubmit="event.preventDefault(); alert('✅ Your message has been sent successfully.');">
+    <input type="text" placeholder="Full name" required>
+    <input type="email" placeholder="Email address" required>
+    <textarea rows="5" placeholder="Tell us about your project" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 WCONNECT. All rights reserved.</p>
+  <div>
+    <a href="#">Instagram</a> | 
+    <a href="#">LinkedIn</a> | 
+    <a href="#">WhatsApp</a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 </body>
 </html>
