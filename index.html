@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wconnect — Digital Marketing, Meta Ads & Growth</title>
+  <title>Wconnect — Digital Marketing, Meta Ads, and Growth</title>
 
   <!-- SEO -->
-  <meta name="description" content="Wconnect: Meta Ads, video editing, sales funnels, optimization, content strategies and social media management. We turn businesses into profitable digital brands." />
+  <meta name="description" content="Westmark Digital: Meta Ads, video editing, sales funnels, optimization, content strategies, and social media management. We transform businesses into profitable digital brands." />
   <meta name="keywords" content="Meta Ads, Facebook Ads, Instagram Ads, Marketing Agency, Funnels, Optimization, Growth Marketing, Video Editing, Content, Social Media" />
 
   <!-- Fonts -->
@@ -22,15 +22,15 @@
         extend: {
           colors: {
             gx: {
-              50:  '#fffaf0',
-              100: '#fff3e0',
-              200: '#fde8b8',
-              300: '#f8d78a',
-              400: '#f0c75b',
-              500: '#cba356', /* gold */
-              600: '#a67f45',
-              700: '#835f34',
-              800: '#1f1f1f', /* soft UI black */
+              50:  '#fffbea',
+              100: '#fff3c4',
+              200: '#fee188',
+              300: '#fdd24d',
+              400: '#fcc419',
+              500: '#f59f00', /* amarillo cálido */
+              600: '#d97706',
+              700: '#b45309',
+              800: '#1f1f1f', /* negro suave UI */
               900: '#0a0a0a'
             }
           },
@@ -39,7 +39,7 @@
             mont: ['Montserrat', 'system-ui', 'sans-serif']
           },
           boxShadow: {
-            glow: '0 10px 30px -10px rgba(203,163,86,.55)'
+            glow: '0 10px 30px -10px rgba(245,159,0,.55)'
           },
           keyframes: {
             float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
@@ -61,41 +61,41 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
-    :root{ --gx-gold:#cba356; --gx-black:#0a0a0a; --gx-dark:#1f1f1f; --gx-white:#ffffff; }
+    :root{ --gx-yellow:#f59f00; --gx-black:#0a0a0a; --gx-dark:#1f1f1f; --gx-white:#ffffff; }
     html{ scroll-behavior:smooth; }
     body{ font-family: 'Inter', sans-serif; color:#0f172a; }
-    .gx-gradient{ background: linear-gradient(135deg,var(--gx-gold),#a67f45 60%); }
-    .gx-btn{ background: linear-gradient(135deg,var(--gx-gold),#a67f45); color:#0a0a0a; }
-    .gx-btn:hover{ filter:brightness(1.05); box-shadow: 0 10px 30px -10px rgba(203,163,86,.55); transform: translateY(-1px); }
-    .gx-outline{ border:2px solid var(--gx-gold); color:white; }
-    .gx-outline:hover{ background: var(--gx-gold); color:#0a0a0a; }
+    .gx-gradient{ background: linear-gradient(135deg,var(--gx-yellow),#d97706 60%); }
+    .gx-btn{ background: linear-gradient(135deg,var(--gx-yellow),#d97706); color:#0a0a0a; }
+    .gx-btn:hover{ filter:brightness(1.05); box-shadow: 0 10px 30px -10px rgba(245,159,0,.55); transform: translateY(-1px); }
+    .gx-outline{ border:2px solid var(--gx-yellow); color:white; }
+    .gx-outline:hover{ background: var(--gx-yellow); color:#0a0a0a; }
     .mask-fade { mask-image: linear-gradient(to bottom, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);}
     .no-scrollbar::-webkit-scrollbar{ display:none; } .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
   </style>
 </head>
 <body class="bg-white antialiased">
   <!-- WhatsApp Floating -->
-  <a href="https://wa.me/3515722575" class="fixed bottom-5 right-5 z-50 h-14 w-14 rounded-full flex items-center justify-center bg-green-500 text-white shadow-xl hover:bg-green-600 transition" aria-label="WhatsApp">
+  <a href="https://wa.me/3515722575" class="fixed bottom-5 right-5 z-50 h-14 w-14 rounded-full flex items-center justify-center bg-green-500 text-white shadow-xl hover:bg-green-600 transition">
     <i class="fa-brands fa-whatsapp text-2xl"></i>
   </a>
 
-  <!-- NAV -->
-  <nav class="fixed top-0 inset-x-0 z-40 bg-white/80 backdrop-blur border-b border-black/5" aria-label="Main navigation">
+   <!-- NAV -->
+  <nav class="fixed top-0 inset-x-0 z-40 bg-white/80 backdrop-blur border-b border-black/5">
     <div class="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-mont text-xl font-extrabold tracking-tight">
-        <img src="./LOGO.png" width="65" alt="Wconnect logo" style="border-radius: 50%; object-fit: cover;">
+      <a href=""# class="flex items-center gap-2 font-mont text-xl font-extrabold tracking-tight">
+      <img src="./LOGO.png" width="65" style="border-radius: 50%; object-fit: cover;">
         <span>Wconnect <span class="text-gx-500">Agency</span></span>
       </a>
-      <button id="btnMenu" class="md:hidden p-2 rounded hover:bg-black/5" aria-expanded="false" aria-controls="mobilePanel"><i class="fa-solid fa-bars text-xl"></i></button>
+      <button id="btnMenu" class="md:hidden p-2 rounded hover:bg-black/5"><i class="fa-solid fa-bars text-xl"></i></button>
       <div id="navLinks" class="hidden md:flex items-center gap-8 font-medium">
         <a href="#services" class="hover:text-gx-600">Services</a>
         <a href="#process" class="hover:text-gx-600">Process</a>
         <a href="#portfolio" class="hover:text-gx-600">Portfolio</a>
         <a href="#testimonials" class="hover:text-gx-600">Testimonials</a>
-        <a href="#contact" class="gx-btn px-4 py-2 rounded-full text-sm font-semibold">Book a meeting</a>
+        <a href="#contact" class="gx-btn px-4 py-2 rounded-full text-sm font-semibold">Schedule a meeting</a>
       </div>
     </div>
-    <div id="mobilePanel" class="md:hidden hidden border-t bg-white" aria-hidden="true">
+    <div id="mobilePanel" class="md:hidden hidden border-t bg-white">
       <div class="px-4 py-4 space-y-3">
         <a href="#services" class="block">Services</a>
         <a href="#process" class="block">Process</a>
@@ -107,8 +107,8 @@
   </nav>
 
   <!-- HERO -->
-  <header class="relative pt-28 pb-20 bg-neutral-950 text-white overflow-hidden" role="banner">
-    <div class="absolute inset-0 opacity-10" aria-hidden="true">
+  <header class="relative pt-28 pb-20 bg-neutral-950 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
       <svg class="w-[160%] h-[160%] -rotate-12 translate-x-[-15%] -translate-y-[10%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="none">
         <g opacity=".6">
           <circle cx="200" cy="200" r="2" fill="white"/>
@@ -123,27 +123,25 @@
     <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10 grid lg:grid-cols-2 gap-10 items-center">
       <div data-aos="fade-up">
         <p class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-white/70 mb-4">
-          <span class="h-2 w-2 rounded-full bg-gx-500"></span> Digital growth agency
-        </p>
-        <h1 class="font-mont text-4xl md:text-6xl font-extrabold leading-tight">
-          We turn <span class="text-gx-500">businesses</span> into <span class="text-gx-500">profitable digital brands</span>
+        <span class="h-2 w-2 rounded-full bg-gx-500"></span> Digital growth agency</p>
+         <h1 class="font-mont text-4xl md:text-6xl font-extrabold leading-tight">We transform businesses into profitable digital brand
         </h1>
-        <p class="mt-5 text-lg text-white/80 max-w-2xl">Meta Ads, video editing, funnels, optimization, content and social media management to scale clients, sales and authority.</p>
+        <p class="mt-5 text-lg text-white/80 max-w-2xl">Meta Ads, video editing, funnels, optimization, content, and social media management to scale customers, sales, and authority. </p>
         <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#contact" class="gx-btn px-6 py-3 rounded-full font-semibold">Book a meeting</a>
+          <a href="#contact" class="gx-btn px-6 py-3 rounded-full font-semibold">Schedule a meeting</a>
           <a href="#services" class="gx-outline px-6 py-3 rounded-full font-semibold">See services</a>
         </div>
 
         <div class="mt-10 grid grid-cols-3 gap-6 text-center">
-          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos="fade-up" data-aos-delay="50">
+          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos=“fade-up” data-aos-delay=“50”>
             <p class="text-3xl font-extrabold text-gx-500">+320%</p>
             <p class="text-sm text-white/70">Average ROAS</p>
           </div>
-          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos=“fade-up” data-aos-delay=“100”>
             <p class="text-3xl font-extrabold text-gx-500">+120</p>
-            <p class="text-sm text-white/70">Creatives / month</p>
+            <p class="text-sm text-white/70">Creativity/month</p>
           </div>
-          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos="fade-up" data-aos-delay="150">
+          <div class="bg-white/5 rounded-xl p-4 border border-white/10" data-aos=“fade-up” data-aos-delay=“150”>
             <p class="text-3xl font-extrabold text-gx-500">24/7</p>
             <p class="text-sm text-white/70">Active optimization</p>
           </div>
@@ -151,16 +149,16 @@
       </div>
 
       <div class="relative lg:block hidden" data-aos="fade-left">
-        <div class="absolute -top-6 -left-6 h-24 w-24 rounded-2xl gx-gradient blur-2xl opacity-75" aria-hidden="true"></div>
+        <div class="absolute -top-6 -left-6 h-24 w-24 rounded-2xl gx-gradient blur-2xl opacity-75"></div>
         <div class="relative bg-neutral-900 border border-white/10 rounded-3xl p-6 shadow-2xl">
           <div class="flex items-center justify-between">
-            <span class="text-white/60 text-sm">Campaign dashboard</span>
+            <span class="text-white/60 text-sm">Campaigns panel</span>
             <span class="inline-flex items-center gap-2 text-xs bg-white/5 px-3 py-1 rounded-full"><span class="h-2 w-2 bg-green-400 rounded-full"></span> live</span>
           </div>
           <div class="mt-5 space-y-4">
             <div class="flex items-center justify-between bg-white/5 rounded-xl p-4">
               <div class="flex items-center gap-3">
-                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-brands fa-facebook-f"></i></span>
                 <div>
                   <p class="font-semibold">Meta Ads — Conversion</p>
                   <p class="text-sm text-white/70">ROAS 4.2 • CPA $2.8</p>
@@ -170,7 +168,7 @@
             </div>
             <div class="flex items-center justify-between bg-white/5 rounded-xl p-4">
               <div class="flex items-center gap-3">
-                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-solid fa-film" aria-hidden="true"></i></span>
+                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-solid fa-film"></i></span>
                 <div>
                   <p class="font-semibold">Reels — Editing & Testing</p>
                   <p class="text-sm text-white/70">CTR 2.9% • CPM $1.6</p>
@@ -180,9 +178,9 @@
             </div>
             <div class="flex items-center justify-between bg-white/5 rounded-xl p-4">
               <div class="flex items-center gap-3">
-                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-solid fa-funnel-dollar" aria-hidden="true"></i></span>
+                <span class="h-8 w-8 rounded-lg bg-gx-500/20 flex items-center justify-center text-gx-500"><i class="fa-solid fa-funnel-dollar"></i></span>
                 <div>
-                  <p class="font-semibold">Funnel — Leads to Sales</p>
+                  <p class="font-semibold">Funnel — Leads a sales</p>
                   <p class="text-sm text-white/70">CVR 6.1% • LTV ↑</p>
                 </div>
               </div>
@@ -193,90 +191,89 @@
       </div>
     </div>
 
-    <!-- Marquee clients -->
+    <!-- More customer -->
     <div class="mt-14 border-t border-white/10">
       <div class="overflow-hidden no-scrollbar">
         <div class="flex gap-12 whitespace-nowrap py-6 animate-marquee">
-          <span class="text-white/60">+ More clients • More sales • More growth •</span>
-          <span class="text-white/60">+ Meta Ads • Content • Funnels •</span>
-          <span class="text-white/60">+ Optimization • Creativity •</span>
-          <span class="text-white/60">+ Growth • Performance • Brand</span>
+          <span class="text-white/60">+ More customers • More sales • More growth •</span>
+          + Meta Ads • Content • Funnels •
+          + Optimization • Creativity •
+          + Growth • Performance • Brand
         </div>
       </div>
     </div>
   </header>
 
-  <!-- SERVICES -->
-  <section id="services" class="py-20 bg-gray-50">
+  <!-- Services -->
+  <section id="servicios" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 md:px-8">
       <div class="text-center mb-14" data-aos="fade-up">
-        <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Services <span class="text-gx-500">Wconnect</span></h2>
-        <p class="text-gray-600 mt-3 max-w-2xl mx-auto">Integrated marketing and performance solutions. Strategy, creativity and data in one place.</p>
+       <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Services <span class="text-gx-500">Wconnect</span></h2>
+        <p class="text-gray-600 mt-3 max-w-2xl mx-auto">Comprehensive marketing and performance solutions. Strategy, creativity, and data all in one place.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Meta Ads -->
         <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition card" data-aos="fade-up" data-aos-delay="50">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-bullhorn"></i></div>
           <h3 class="font-mont font-bold text-xl mb-2">Meta Ads</h3>
-          <p class="text-gray-600 mb-4">Campaigns on Facebook & Instagram with advanced targeting, A/B testing and continuous optimization.</p>
+          <p class="text-gray-600 mb-4">Facebook & Instagram campaigns with advanced targeting, A/B testing, and continuous optimization. </p>
           <ul class="space-y-2 text-sm text-gray-700">
             <li>• CBO/ABO structures</li>
-            <li>• Creatives & offers</li>
-            <li>• Reports & ROAS</li>
+            <li>• Creatives and offers</li>
+            <li>• Reports and ROAS</li>
           </ul>
         </div>
         <!-- Video -->
         <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="100">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-video" aria-hidden="true"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Video Editing</h3>
-          <p class="text-gray-600 mb-4">Reels, UGC and spots with dynamic cuts, subtitles, motion and high-CTR hooks.</p>
+          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-video"></i></div>
+          <h3 class="font-mont font-bold text-xl mb-2">Video Editing Reels, UGC, and spots with dynamic cuts, subtitles, motion, and high CTR hooks. </p>
           <ul class="space-y-2 text-sm text-gray-700">
             <li>• Monthly packages</li>
-            <li>• Animations & captions</li>
+            <li>• Animations and captions</li>
             <li>• Multi-format adaptations</li>
           </ul>
         </div>
         <!-- Funnels -->
         <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="150">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-funnel-dollar" aria-hidden="true"></i></div>
+          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-funnel-dollar"></i></div>
           <h3 class="font-mont font-bold text-xl mb-2">Sales Funnels</h3>
-          <p class="text-gray-600 mb-4">Full-funnel architecture: acquisition, nurture and close with automation.</p>
+          <p class="text-gray-600 mb-4">Full-funnel architecture: acquisition, nurturing, and closing with automation. </p>
           <ul class="space-y-2 text-sm text-gray-700">
             <li>• Landing + Email + CRM</li>
-            <li>• Lead scoring & nurturing</li>
+            <li>• Lead scoring and nurturing</li>
             <li>• Conversion optimization</li>
           </ul>
         </div>
         <!-- Optimization -->
         <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="200">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-chart-line"></i></div>
           <h3 class="font-mont font-bold text-xl mb-2">Optimization</h3>
-          <p class="text-gray-600 mb-4">Technical SEO, CRO and analytics to improve performance and visibility.</p>
+          <p class="text-gray-600 mb-4">Technical SEO, CRO, and analytics to improve performance and visibility. </p>
           <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Audits & roadmaps</li>
-            <li>• Experiments & heatmaps</li>
-            <li>• KPIs & dashboards</li>
+            <li>• Audits and roadmaps</li>
+            <li>• Experiments and heatmaps</li>
+            <li>• KPIs and dashboards</li>
           </ul>
         </div>
-        <!-- Content -->
+        <!-- content -->
         <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="250">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Content Strategy</h3>
-          <p class="text-gray-600 mb-4">Calendars, pillars, scripts and design to attract and convert.</p>
+          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3 class="font-mont font-bold text-xl mb-2">Content Strategies</h3>
+          <p class="text-gray-600 mb-4">Calendars, pillars, scripts, and design to attract and convert. </p>
           <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Objective-driven playbooks</li>
+            <li>• Playbooks by objective</li>
             <li>• Conversion copywriting</li>
             <li>• Asset library</li>
           </ul>
         </div>
-        <!-- Social Media -->
+        <!-- Redes -->
         <div class="bg-white rounded-2xl p-7 border hover:shadow-glow transition" data-aos="fade-up" data-aos-delay="300">
-          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></div>
-          <h3 class="font-mont font-bold text-xl mb-2">Social Media Management</h3>
-          <p class="text-gray-600 mb-4">Full service: planning, community and reporting.</p>
+          <div class="h-12 w-12 rounded-xl gx-gradient flex items-center justify-center text-black mb-5"><i class="fa-solid fa-hashtag"></i></div>
+          <h3 class="font-mont font-bold text-xl mb-2">Network Management</h3>
+          <p class="text-gray-600 mb-4">Comprehensive management: planning, community, and reporting. </p>
           <ul class="space-y-2 text-sm text-gray-700">
-            <li>• Reputation & response</li>
-            <li>• Scheduling & monitoring</li>
+            <li>• Reputation and response</li>
+            <li>• Scheduling and monitoring</li>
             <li>• Growth metrics</li>
           </ul>
         </div>
@@ -284,52 +281,51 @@
     </div>
   </section>
 
-  <!-- PROCESS -->
+  <!-- PROCESO -->
   <section id="process" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-8">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Our process</h2>
-          <p class="text-gray-600 mt-3">Focused on measurable results. Strategy, execution and continuous improvement.</p>
+          <p class="text-gray-600 mt-3">Focused on measurable results. Strategy, execution, and continuous improvement.</p>
           <div class="mt-8 space-y-6">
-            <div class="flex gap-4" data-aos="fade-up"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">1</span><div><h4 class="font-semibold">Diagnosis & Objectives</h4><p class="text-gray-600 text-sm">Audit and KPI definition.</p></div></div>
-            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="50"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">2</span><div><h4 class="font-semibold">Strategy & Plan</h4><p class="text-gray-600 text-sm">Media routes, content and funnel.</p></div></div>
-            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="100"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">3</span><div><h4 class="font-semibold">Production & Launch</h4><p class="text-gray-600 text-sm">Creatives, setup and QA.</p></div></div>
-            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="150"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">4</span><div><h4 class="font-semibold">Optimization & Scale</h4><p class="text-gray-600 text-sm">Testing, automation and growth.</p></div></div>
+            <div class="flex gap-4" data-aos="fade-up"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">1</span><div><h4 class="font-semibold">Diagnóstico & Objetivos</h4><p class="text-gray-600 text-sm">Auditoría y definición de KPIs.</p></div></div>
+            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="50"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">2</span><div><h4 class="font-semibold">Estrategia & Plan</h4><p class="text-gray-600 text-sm">Rutas de medios, contenido y funnel.</p></div></div>
+            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="100"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">3</span><div><h4 class="font-semibold">Producción & Lanzamiento</h4><p class="text-gray-600 text-sm">Creatividades, configuración y QA.</p></div></div>
+            <div class="flex gap-4" data-aos="fade-up" data-aos-delay="150"><span class="h-10 w-10 rounded-lg gx-gradient flex items-center justify-center text-black font-bold">4</span><div><h4 class="font-semibold">Optimización & Escala</h4><p class="text-gray-600 text-sm">Testing, automatización y crecimiento.</p></div></div>
           </div>
         </div>
         <div class="relative">
           <div class="rounded-3xl border shadow-2xl overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop" alt="Marketing team working" class="w-full h-full object-cover mask-fade" />
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop" alt="Equipo de marketing trabajando" class="w-full h-full object-cover mask-fade" />
           </div>
-          <div class="absolute -bottom-6 -left-6 h-24 w-24 rounded-2xl gx-gradient blur-2xl opacity-70" aria-hidden="true"></div>
+          <div class="absolute -bottom-6 -left-6 h-24 w-24 rounded-2xl gx-gradient blur-2xl opacity-70"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO / CASES -->
-  <section id="portfolio" class="py-20 bg-gray-50">
+  <!-- PORTAFOLIO / CASES -->
+  <section id="portafolio" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 md:px-8">
       <div class="text-center mb-12">
         <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Portfolio & Cases</h2>
-        <p class="text-gray-600 mt-3">Some recent results and creative pieces.</p>
+        <p class="text-gray-600 mt-3">Some recent results and pieces.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="group relative overflow-hidden rounded-2xl border bg-white" data-aos="zoom-in">
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Meta Ads campaign"/>
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Campaña Meta Ads"/>
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex items-end">
-            <div class="text-white"><p class="font-semibold">Ecommerce • ROAS 5.1</p><p class="text-sm text-white/80">CBO strategy & UGC creatives</p></div>
+            <div class="text-white"><p class="font-semibold">E-commerce • ROAS 5,1</p><p class="text-sm text-white/80">Strategie CBO a kreativita UGC</p></div>
           </div>
         </div>
         <div class="group relative overflow-hidden rounded-2xl border bg-white" data-aos="zoom-in" data-aos-delay="50">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Sales funnel"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex items-end">
-            <div class="text-white"><p class="font-semibold">Service • 38% CVR</p><p class="text-sm text-white/80">Funnel + CRM + Email</p></div>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Funnel de ventas"/>
+          <div class="text-white"><p class="font-semibold">Service • 38% CVR</p><p class="text-sm text-white/80">Funnel + CRM + Email</p></div>
           </div>
         </div>
         <div class="group relative overflow-hidden rounded-2xl border bg-white" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Content & branding"/>
+          <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?q=80&w=1600&auto=format&fit=crop" class="h-56 w-full object-cover group-hover:scale-105 transition" alt="Contenido y branding"/>
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex items-end">
             <div class="text-white"><p class="font-semibold">Content • +220% reach</p><p class="text-sm text-white/80">Pillars + scripts + design</p></div>
           </div>
@@ -338,100 +334,110 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 md:px-8">
-      <div class="text-center mb-12">
-        <h2 class="font-mont text-3xl md:text-4xl font-extrabold">What our clients say</h2>
-        <p class="text-gray-600 mt-3">Trust, measurable outcomes and real partnership.</p>
-      </div>
-
-      <div class="overflow-x-auto no-scrollbar flex gap-6 snap-x">
-
-        <!-- Testimonial 1 - Fictional -->
-        <div class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
-              <img src="https://i.pravatar.cc/48?img=12"
-                   alt="Harrison Studio"
-                   class="max-h-10 max-w-10 object-contain"
-                   loading="lazy" decoding="async" />
-            </div>
-            <div>
-              <p class="font-semibold">Oliver Hayes</p>
-              <p class="text-xs text-gray-500">Founder • Harrison Studio</p>
-            </div>
-          </div>
-          <p class="text-gray-700">"Wconnect helped us scale our B2B pipeline and improved positioning across channels. Results were visible within the first month."</p>
-          <div class="mt-4 text-gx-500">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 - Fictional -->
-        <div class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="50">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
-              <img src="https://i.pravatar.cc/48?img=24"
-                   alt="Antique Home"
-                   class="max-h-10 max-w-10 object-contain"
-                   loading="lazy" decoding="async" />
-            </div>
-            <div>
-              <p class="font-semibold">Pablo Mendes</p>
-              <p class="text-xs text-gray-500">CEO • VintageHome</p>
-            </div>
-          </div>
-          <p class="text-gray-700">"Their digital strategy revitalized our online store and significantly increased recurring sales. Highly recommended."</p>
-          <div class="mt-4 text-gx-500">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 - Fictional -->
-        <div class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
-              <img src="https://i.pravatar.cc/48?img=33"
-                   alt="TrophyCo"
-                   class="max-h-10 max-w-10 object-contain"
-                   loading="lazy" decoding="async" />
-            </div>
-            <div>
-              <p class="font-semibold">Gonzalo Perez</p>
-              <p class="text-xs text-gray-500">Founder • TrophyCo</p>
-            </div>
-          </div>
-          <p class="text-gray-700">"Wconnect Digital helped us grow our online sales and position our brand as a leader in the region."</p>
-          <div class="mt-4 text-gx-500">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-        </div>
-
-      </div>
+  <!--TESTIMONIALS  -->
+<section id="testimonios" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="text-center mb-12">
+      <h2 class="font-mont text-3xl md:text-4xl font-extrabold">What our clients say</h2>
+      <p class="text-gray-600 mt-3">Trust, results, and real partnership.</p>
     </div>
-  </section>
+
+    <div class="overflow-x-auto no-scrollbar flex gap-6 snap-x">
+
+      <!-- Testimonial 1 - VICOR -->
+      <a href="https://www.instagram.com/vicorok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+         target="_blank" rel="noopener noreferrer" aria-label="Perfil VICOR" 
+         class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
+            <img src="https://i.imgur.com/rxzt6Qe.jpg"
+                 alt="VICOR Vidrios"
+                 class="max-h-10 max-w-10 object-contain"
+                 loading="lazy" decoding="async"
+                 onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=VICOR';" />
+          </div>
+          <div>
+            <p class="font-semibold">Andrés Orozco</p>
+            <p class="text-xs text-gray-500">CEO of VICOR • Glass Factory</p>
+          </div>
+        </div>
+        <p class="text-gray-700">“Thanks to Wconnect, we have managed to increase our B2B customers and improve our positioning in the glass industry.”</p>
+        <div class="mt-4 text-yellow-500">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </a>
+
+      <!-- Testimonial 2 - Muebles de Pablo -->
+      <a href="https://www.instagram.com/mueblesdepablo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+         target="_blank" rel="noopener noreferrer" aria-label="Perfil Muebles de Pablo"
+         class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="50">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
+            <img src="https://i.imgur.com/vm0BXSV.jpg"
+                 alt="Muebles de Pablo"
+                 class="max-h-10 max-w-10 object-contain"
+                 loading="lazy" decoding="async"
+                 onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=Muebles';" />
+          </div>
+          <div>
+            <p class="font-semibold">Pablo Suárez</p>
+            <p class="text-xs text-gray-500">CEO of Muebles de Pablo • Antiques</p>
+          </div>
+        </div>
+        <p class="text-gray-700">“The Wconnect team boosted our online antiques business, and today we have more customers and recurring sales.”</p>
+        <div class="mt-4 text-yellow-500">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </a>
+
+      <!-- Testimonial 3 - Olimpo Trofeos (USANDO IBb DIRECT LINK) -->
+      <a href="https://www.instagram.com/olimpotrofeos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+         target="_blank" rel="noopener noreferrer" aria-label="Perfil Olimpo Trofeos"
+         class="min-w-[320px] snap-start bg-gray-50 border rounded-2xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="h-12 w-12 rounded-full bg-white flex items-center justify-center overflow-hidden border">
+            <img src="https://i.ibb.co/4RWzSQ9j/Dise-o-sin-t-tulo-1.jpg"
+                 alt="Olimpo Trofeos"
+                 class="max-h-10 max-w-10 object-contain"
+                 loading="lazy" decoding="async"
+                 onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=Olimpo';" />
+          </div>
+          <div>
+             <p class="font-semibold">Gonzalo Peiretti</p>
+            <p class="text-xs text-gray-500">CEO of Olimpo Trofeos • Trophy Factory</p>
+          </div>
+        </div>
+        <p class="text-gray-700">“With Wconnect Digital, we scaled our digital sales and positioned Olimpo Trofeos as a benchmark in the region.”</p>
+        <div class="mt-4 text-yellow-500">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- FAQ -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 md:px-8">
       <div class="grid lg:grid-cols-2 gap-10 items-start">
         <div>
-          <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Frequently Asked Questions</h2>
-          <p class="text-gray-600 mt-3">Clear answers to help you decide quickly.</p>
+          <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Frequently asked questions</h2>
+          <p class="text-gray-600 mt-3">Clear answers for quick decisions. </p>
         </div>
         <div class="space-y-4">
           <details class="bg-white rounded-xl p-5 border">
-            <summary class="font-semibold cursor-pointer">How do you measure results?</summary>
-            <p class="text-gray-600 mt-3">We set KPIs and dashboards. Weekly reports with insights and next steps.</p>
+            <summary class="font-semibold cursor-pointer">How do we measure results?</summary>
+            <p class="text-gray-600 mt-3">We define KPIs and dashboards. Weekly reports with insights and next steps. </p>
           </details>
           <details class="bg-white rounded-xl p-5 border">
-            <summary class="font-semibold cursor-pointer">Are there minimum contracts?</summary>
-            <p class="text-gray-600 mt-3">We recommend a 3-month commitment to set up strategy, learn and scale with data.</p>
+            <summary class="font-semibold cursor-pointer">Do you have minimum contracts?</summary>
+            <p class="text-gray-600 mt-3">We propose 3 months to install strategy, learn, and scale with data.</p>
           </details>
           <details class="bg-white rounded-xl p-5 border">
             <summary class="font-semibold cursor-pointer">What do you need to get started?</summary>
-            <p class="text-gray-600 mt-3">Account access, brand brief, objectives and an estimated budget.</p>
+            <p class="text-gray-600 mt-3">Account access, brand brief, objectives, and estimated budget.</p>
           </details>
         </div>
       </div>
@@ -440,119 +446,114 @@
 
   <!-- CTA -->
   <section class="py-16 relative text-white">
-    <div class="absolute inset-0 gx-gradient" aria-hidden="true"></div>
+    <div class="absolute inset-0 gx-gradient"></div>
     <div class="relative max-w-7xl mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-8 items-center">
       <div>
         <h3 class="font-mont text-3xl md:text-4xl font-extrabold">Ready to scale?</h3>
-        <p class="text-white/90 mt-2">Let's talk objectives, budget and a clear 90-day plan.</p>
+        <p class="text-white/90 mt-2">Let's talk about goals, budget, and a clear plan for the next 90 days. </p>
       </div>
       <div class="flex gap-4 justify-start lg:justify-end">
-        <a href="#contact" class="bg-black text-white px-6 py-3 rounded-full font-semibold">Book now</a>
+        <a href="#contact" class="bg-black text-white px-6 py-3 rounded-full font-semibold">Schedule now</a>
         <a href="#services" class="bg-white text-black px-6 py-3 rounded-full font-semibold">See services</a>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 md:px-8">
-      <div class="grid lg:grid-cols-2 gap-10">
-        <div>
-          <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Let's talk</h2>
-          <p class="text-gray-600 mt-3">Complete the form and we'll schedule a meeting. We reply within 24 hours.</p>
-          <ul class="mt-6 space-y-3 text-gray-700">
-            <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Tailored plan according to objectives</li>
-            <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Clear, no jargon</li>
-            <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Team committed to results</li>
-          </ul>
-        </div>
-
-        <!-- Contact form with IDs -->
-        <form id="contactForm" class="bg-gray-50 rounded-2xl p-6 border space-y-4">
-          <div>
-            <label for="name" class="block text-sm font-medium mb-1">Name & company</label>
-            <input id="name" type="text" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="E.g. Valentina — Candle Shop" required>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="email" class="block text-sm font-medium mb-1">Email</label>
-              <input id="email" type="email" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="you@company.com" required>
-            </div>
-            <div>
-              <label for="whatsapp" class="block text-sm font-medium mb-1">WhatsApp</label>
-              <input id="whatsapp" type="tel" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="+54 9 ..." required>
-            </div>
-          </div>
-          <div>
-            <label for="service" class="block text-sm font-medium mb-1">Service of interest</label>
-            <select id="service" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500">
-              <option>Meta Ads</option>
-              <option>Video Editing</option>
-              <option>Sales Funnel</option>
-              <option>Optimization</option>
-              <option>Content Strategy</option>
-              <option>Social Media Management</option>
-            </select>
-          </div>
-          <div>
-            <label for="goal" class="block text-sm font-medium mb-1">Briefly tell us your goal</label>
-            <textarea id="goal" rows="4" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="E.g. scale online sales and improve ROAS"></textarea>
-          </div>
-          <button type="submit" class="gx-btn px-6 py-3 rounded-xl font-semibold w-full">Send</button>
-          <p class="text-xs text-gray-500 text-center">By sending you agree to be contacted by email/WhatsApp.</p>
-        </form>
+<section id="" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="grid lg:grid-cols-2 gap-10">
+      <div>
+        <h2 class="font-mont text-3xl md:text-4xl font-extrabold">Let's talk</h2>
+        <p class="text-gray-600 mt-3">Fill out the form and we'll set up a meeting. We will respond within 24 hours.</p>
+        <ul class="mt-6 space-y-3 text-gray-700">
+          <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Tailored plan based on your objectives</li>
+          <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> No technical jargon, just clarity</li>
+          <li><i class="fa-solid fa-circle-check text-gx-500 mr-2"></i> Team committed to results</li>
+        </ul>
       </div>
+
+      <!-- Formo con IDs -->
+      <form id="contactForm" class="bg-gray-50 rounded-2xl p-6 border space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">name y business</label>
+          <input id="name" type="text" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="Ej. Valentina — Tienda Vela" required>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input id="email" type="email" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="tucorreo@empresa.com" required>
+          </div>
+          <div>
+            <label for="whatsapp" class="block text-sm font-medium mb-1">WhatsApp</label>
+            <input id="whatsapp" type="tel" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="+54 9 ..." required>
+          </div>
+        </div>
+        <div>
+          <label for="service" class="block text-sm font-medium mb-1">Servicio de interés</label>
+          <select id="service" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500">
+            <option>Meta Ads</option>
+            <option>Video editing</option>
+            <option>Sales Funnel</option>
+            <option>Optimization</option>
+            <option>Content Strategies</option>
+            <option>Network Management</option>
+          </select>
+        </div>
+        <div>
+          <label for="goal" class="block text-sm font-medium mb-1">Briefly tell us your goal.</label>
+          <textarea id="goal" rows="4" class="w-full border rounded-lg px-4 py-3 outline-none focus:border-gx-500" placeholder="Ej. escalar ventas online y mejorar el ROAS"></textarea>
+        </div>
+        <button type="submit" class="gx-btn px-6 py-3 rounded-xl font-semibold w-full">Send</button>
+        <p class="text-xs text-gray-500 text-center">By submitting, you agree to be contacted by email/WhatsApp.</p>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", async function(e) {
-      e.preventDefault();
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
 
-      const data = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        whatsapp: document.getElementById("whatsapp").value,
-        service: document.getElementById("service").value,
-        goal: document.getElementById("goal").value
-      };
+    const data = {
+      nombre: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      whatsapp: document.getElementById("whatsapp").value,
+      servicio: document.getElementById("service").value,
+      objetivo: document.getElementById("goal").value
+    };
 
-      try {
-        await fetch("https://script.google.com/macros/s/AKfycbyEa2HxOUhy9OCRcR5oQzpIPRW1SSvooRGlRzuU3I0M31IUsG1b4lKKl4RoK_kyU6iw_w/exec", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data)
-        });
-      } catch (err) {
-        // If the request fails, we still show confirmation to avoid blocking UX in demo environments
-        console.warn("Form submit failed (demo environment):", err);
-      }
-
-      alert("✅ Data submitted and saved successfully.");
-      document.getElementById("contactForm").reset(); // clear form
+    await fetch("https://script.google.com/macros/s/AKfycbyEa2HxOUhy9OCRcR5oQzpIPRW1SSvooRGlRzuU3I0M31IUsG1b4lKKl4RoK_kyU6iw_w/exec", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
     });
-  </script>
+
+    alert("✅Data successfully sent and saved. ");
+    document.getElementById("contactForm").reset(); // limpia el formulario
+  });
+</script>
 
   <!-- FOOTER -->
-  <footer class="bg-neutral-950 text-white py-12" role="contentinfo">
+  <footer class="bg-neutral-950 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-3 gap-8">
       <div>
         <div class="flex items-center gap-2 font-mont text-xl font-extrabold">
-          <img src="./LOGO.png" width="65" alt="Wconnect logo" style="border-radius: 50%; object-fit: cover;">
+          <img src="./LOGO.png" width="65" style="border-radius: 50%; object-fit: cover;">
          Wconnect
         </div>
-        <p class="text-white/70 mt-3 max-w-sm">More clients, more sales, more growth. Marketing and performance with a focus on real results.</p>
+        <p class="text-white/70 mt-3 max-w-sm">Más clientes, más ventas, más crecimiento. Marketing y performance con enfoque en resultados reales.</p>
       </div>
       <div>
         <h4 class="font-semibold mb-3">Services</h4>
         <ul class="space-y-2 text-white/80">
           <li>Meta Ads</li>
-          <li>Video Editing</li>
-          <li>Sales Funnels</li>
+          <li>Video editing</li>
+          <li>Sales funnels</li>
           <li>Optimization</li>
-          <li>Content Strategy</li>
-          <li>Social Media Management</li>
-        </ul>
+          <li>Content strategies</li>
+          <li>Social media management</li>
+        </ul> 
       </div>
       <div>
         <h4 class="font-semibold mb-3">Contact</h4>
@@ -574,11 +575,7 @@
     const btn = document.getElementById('btnMenu');
     const panel = document.getElementById('mobilePanel');
     const links = document.getElementById('navLinks');
-    btn && btn.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      panel.classList.toggle('hidden');
-    });
+    btn && btn.addEventListener('click', () => panel.classList.toggle('hidden'));
 
     // Smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -587,3 +584,4 @@
   </script>
 </body>
 </html>
+
